@@ -10,6 +10,6 @@ GUIcalc is a calculator created in Python with an interface.
 
 * Multiplication **[ * ]**
 
-* Perfect Division **[ / ]**
+* Perfect Division **[ // ]**
 
-* Division With Remainder **[ // ]**
+* Division With Remainder **[ % ]**
