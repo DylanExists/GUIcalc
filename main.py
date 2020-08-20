@@ -3,13 +3,13 @@ from functools import partial
 root = Tk()
 
 # setup variable section
-varx = StringVar(root, value="0") # xvar = output box variable
-strx = varx.get()
+varx = StringVar(root, value="0") # varx = output box variable
+strx = varx.get() # strx = varx but in string
 owt = 0
 # setup variable section
 
 # setup window section
-root.title("GUIcalc") # window title
+root.title("GUIcalc BETA") # window title
 root.iconphoto(False, PhotoImage(file="windowicon.png")) # window icon
 frame = Frame(root, width=250, height=125).pack() # window frame size
 root.resizable(0, 0) # window resizability (false)
@@ -44,5 +44,15 @@ button8 = Button(root, text="8", command=partial(numBut, 8)).place(x=28, y=96) #
 button9 = Button(root, text="9", command=partial(numBut, 9)).place(x=48, y=96) # "9" button
 button10 = Button(root, text="0", height=4, command=partial(numBut, 0)).place(x=68, y=46) # "0" button
 # number button section
+
+# operation button section
+button11 = Button(root, text="+", width=1).place(x=88, y=40) # addition
+button12 = Button(root, text="-", width=1).place(x=108, y=40) # subtraction
+button13 = Button(root, text="x", width=1).place(x=88, y=68) # multiplication
+button14 = Button(root, text="^", width=1).place(x=108, y=68) # exponentation
+button15 = Button(root, text="/", width=1).place(x=88, y=96) # perfect division
+button16 = Button(root, text="//", width=1).place(x=108, y=96) # division with remainder
+button17 = Button(root, text="=", width=1, height=4).place(x=128, y=46) # equal
+# operation button section
 
 root.mainloop()
